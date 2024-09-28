@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('/fontes/TAN-NIMBUS.otf') format('opentype');
+}
+
+* { /* Essa linha são efeitos globais */
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Poppins';
+}
+body {
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f3ef;
+}
+
+header, main {
+    border-top: 2px solid black; /*linha horizontal para separar o menu da pagina em si*/
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /*eu nao sei como, mas isso funciona pra deixar os links na direita e a imagem na esquerda*/
+    align-items: center; /* Centraliza os links no meio em relação a imagem */
+}
+
+.container h1 {
+    font-family: 'MinhaFonte', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #000;
+}
+
+nav ul ol {
+    display: inline-block; /* Exibe os itens em linha */
+}
+
+nav ul ol a {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+nav ul ol a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+footer {
+    background-color: black;
+    height: 300px;
+    width: 1450px;
+    color: #f5f3ef;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+}
+
+.segmento1 {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    font-size: xx-large;
+    align-items: center;
+}
+
+.segmento2 {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    font-size: xx-large;
+    align-items: center;
+}
+
+.button {
+    background-color: #000;
+    color: #f5f3ef;
+    border-radius: 10%;
+    
+}
+
+.destaque {
+    font-size: xxx-large;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}

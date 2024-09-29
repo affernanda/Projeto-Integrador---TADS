@@ -38,9 +38,8 @@ nav ul ol {
 }
 
 nav ul ol a {
-    font-family: 'Courier New', Courier, monospace;
     color: black;
-    text-decoration: none; /* Remove o sublinhado */
+    text-decoration:none; /* Remove o sublinhado */
 }
 
 nav ul ol a:hover {
@@ -166,11 +165,7 @@ footer nav ul ol{
     width: 350px;
     height: 150px;
     padding: 10px;
-    align-items:top;
+    align-content: start;
     display: inline;
     justify-content: space-between
-}
-
-.bottom {
-    align-items:last baseline;
 }

@@ -1,0 +1,14 @@
+# Para adicionar mudanças
+git add .
+
+# Para fazer um commit
+git commit -m "sua mensagem"
+
+# Para enviar alterações
+git push
+
+# Para criar uma nova branch
+git checkout -b nome-da-sua-branch
+
+# Para enviar a nova branch
+git push origin nome-da-sua-branch

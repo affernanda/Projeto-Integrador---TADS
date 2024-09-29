@@ -80,3 +80,17 @@ footer {
     font-size: xxx-large;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.destaque2 {
+    font-size: xx-large;
+}
+
+.destaque3 {
+    font-size: large;
+}
+
+.textopadrao {
+    font-size: medium;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}

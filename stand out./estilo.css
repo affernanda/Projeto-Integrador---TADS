@@ -49,12 +49,29 @@ nav ul ol a:hover {
 
 footer {
     background-color: black;
-    height: 300px;
+    height: 400px;
     width: 1450px;
     color: #f5f3ef;
     display: flex; /* Ativa o Flexbox */
     justify-content: space-between; /* Espaça os itens */
     padding: 10px; /* Adiciona um pouco de espaçamento interno */
+}
+
+footer nav ul ol{
+    display: block;
+    color: #454545;
+    list-style-type: none;
+}
+
+.termos{
+    border-bottom: 2px solid #454545; /*linha horizontal para separar o menu da pagina em si*/
+    background-color: black;
+    color: #f5f3ef;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    align-items: end;
+    font-size: xx-small;
 }
 
 .segmento1 {
@@ -81,12 +98,19 @@ footer {
 .button {
     background-color: #000;
     color: #f5f3ef;
-    border-radius: 10%;    
+    border-radius: 10%;  
+}
+
+.button2 {
+    background-color: #000;
+    color: #f5f3ef;  
+    width: 150px;
+    height: 50px;
 }
 
 .destaque {
     font-size: xxx-large;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
 }
 
 .destaque2 {
@@ -113,13 +137,40 @@ footer {
 }
 
 .cortarfoto {
-        justify-content: center;
-        height: 470px; /* Altura do quadrado */
-        overflow: hidden; /* Esconde o que ultrapassa */
-        align-items: center;
-        padding: 20px;
-        max-width: 564px;
-        object-fit: cover;
-        padding: 20px;
-        display: flex;
+    justify-content: center;
+    height: 470px; /* Altura do quadrado */
+    overflow: hidden; /* Esconde o que ultrapassa */
+    align-items: center;
+    padding: 20px;
+    max-width: 564px;
+    object-fit: cover;
+    padding: 20px;
+    display: flex;
+}
+
+.block {
+    background-color: #efece6;
+    width: 1450px;
+    height: 200px;
+    padding: 10px;
+    align-items:center;
+    display: flex;
+}
+
+.block2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 10px;
+    width: 350px;
+    height: 150px;
+    padding: 10px;
+    align-items:top;
+    display: inline;
+    justify-content: space-between
+}
+
+.bottom {
+    align-items:last baseline;
 }

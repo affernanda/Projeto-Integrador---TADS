@@ -48,8 +48,6 @@ nav ul ol a:hover {
 
 footer {
     background-color: black;
-    height: 400px;
-    width: 1450px;
     color: #f5f3ef;
     display: flex; /* Ativa o Flexbox */
     justify-content: space-between; /* Espaça os itens */

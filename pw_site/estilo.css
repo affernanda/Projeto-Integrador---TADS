@@ -4,9 +4,17 @@
     font-style: normal;
   }
 
+header {
+    background-color: #073A69;
+    background-size: 40%;
+    font-style: normal;
+    
+}
+
 body h1 {
     font-family: Ubuntu;
 }
+
 
 footer {
     background-color: #073A69;
@@ -38,7 +46,7 @@ nav ul ol {
 }
 
 nav ul ol a {
-    color: #073A69;
+    color:#f5f3ef;
     text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -53,10 +61,62 @@ nav ul ol a:hover {
 
 .container h1 {
     font-family: 'MinhaFonte', sans-serif;
-    color: #073A69;
+    color: #f5f3ef;
 }
 
 .destaque {
     font-size: xxx-large;
     text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
+}
+
+.carrossel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.carrossel-imagem{
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+
+.carrossel img {
+    width: 100%;
+    display: block;
+
+}
+
+.carrossel-anterior, .carrossel-seguinte{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba( 0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.carrossel-anterior{
+    left: 10px;
+}
+
+.carrossel-seguinte{
+    right: 10px;
 }

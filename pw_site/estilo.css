@@ -1,3 +1,8 @@
+body,  h1, h2, p, ul, #agendamento {
+    margin: 10px;
+    padding: 10px;
+   }
+
 .ubuntu-regular {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
@@ -7,24 +12,23 @@
 header {
     background-color: #073A69;
     background-size: 40%;
-    font-style: normal;
+    padding: 10px;
+}
     
-}
-
 body h1 {
-    font-family: Ubuntu;
+    font-family: sans-serif;
 }
 
-main:hover {
-    transform: scale(1.08);
+main section:hover {
+    transform: scale(1.02);
 }
 
 section {
     padding: 2%;
     background-color: white;
     margin: 10%;
-    max-width: 10%;
-    box-shadow: #073A69;
+    max-width: 5%;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.1);
     border-radius: 10px;
 }
 
@@ -35,12 +39,14 @@ footer {
     display: flex; /* Ativa o Flexbox */
     justify-content: space-between; /* Espaça os itens */
     padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    
 }
 
 footer nav ul ol{
     display: block;
     color: #073A69;
     list-style-type: none;
+    font-size: xx-large;
 }
 
 .termos{
@@ -68,8 +74,9 @@ nav ul ol a:hover {
 }
 
 .container {
-    display: flex; 
+    display:inline-flex; 
     align-items: center; /* Centraliza os links no meio em relação a imagem */
+    justify-content: space-between;
 }
 
 .container h1 {
@@ -78,15 +85,18 @@ nav ul ol a:hover {
 }
 
 .destaque {
-    font-size: xxx-large;
-    text-shadow: 0px 2px 1px rgba(255, 255, 255, 0.5);
+    font-size: xx-large;
+    color: #f5f3ef;
 }
 
 .carrossel {
     position: relative;
-    max-width: 100%;
+    max-width: 80%;
     margin: auto;
     overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    display:inline-flex; 
 }
 
 
@@ -99,13 +109,16 @@ nav ul ol a:hover {
 .carrossel-imagem{
     min-width: 25%;
     box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    display:inline-flex; 
 }
 
 
 .carrossel img {
     width: 100%;
     display: block;
-
+    height: auto;
 }
 
 .carrossel-anterior, .carrossel-seguinte{
@@ -130,4 +143,15 @@ nav ul ol a:hover {
 
 .carrossel-seguinte{
     right: 10px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }

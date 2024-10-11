@@ -17,46 +17,40 @@
             <h1 class="destaque">Judô Regis</h1>
             <nav>
                 <ul>
-                    <ol><a href="index.html"><strong>Home</strong></a></ol>
-                    <ol><a href="agendamento.html"><strong>Agendar Aula</strong></a></ol> 
-                    <ol><a href="eventos.html"><strong>Eventos</strong></a></ol>
-                    <ol><a href="apoio.html"><strong>Apoio</strong></a></ol>
-                    <ol><a href="sobre.html"><strong>Sobre Nós</strong></a></ol>
+                    <ol><a href="index.html">Home</a></ol>
+                    <ol><a href="agendamento.html">Agendar Aula</a></ol> 
+                    <ol><a href="eventos.html">Eventos</a></ol>
+                    <ol><a href="apoio.html">Apoio</a></ol>
+                    <ol><a href="sobre.html">Sobre Nós</a></ol>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
+
+        <h1 align = "center">Venha fazer parte da família Judô Régis!</h1>
          
         <section class="carrossel">
             <div class="carrossel-container">
-                <div class="carrossel-imagem">
-                    <img src="FOTOS/unnamed.jpg">
-                </div>
-                <div class="carrossel-imagem">
-                    <img src="FOTOS/20160411_200433.jpg">
-                </div>
-                <div class="carrossel-imagem">
-                    <img src="FOTOS/judoregis.jpg">
-                </div>
+                <div class="carrossel-imagem"><img src="FOTOS/unnamed.jpg"></div>
+                <div class="carrossel-imagem"><img src="FOTOS/20160411_200433.jpg"></div>
+                <div class="carrossel-imagem"><img src="FOTOS/judoregis.jpg"></div>
             </div>
-            <button class="carrossel-anterior">&#10094;</button>
-            <button class="carrossel-seguinte">&#10095;</button>
+            <button class="carrossel-anterior" onclick="mudarSlide(-1)">&#10094;</button>
+            <button class="carrossel-seguinte" onclick="mudarSlide(1)">&#10095;</button>
         </section>
         
     </main>
 
 
     <footer>
-        <div class="footer">
-            <h2>Judô Regis</h2>
-        </div>
+        <h1 class="destaque">Judô Regis</h1>
         <p class="termos">© JUDÔ REGIS | Dev.: Fernanda Oliveira, Kalliani Lima, Luís Miguel G.</p>         
         <p class="termos">Todos os direitos reservados 2024</p>
     </footer>
     
-    <script src="efeito.js"></script>
+    <script src="carrossel.js"></script>
 </body>
 </html>
 

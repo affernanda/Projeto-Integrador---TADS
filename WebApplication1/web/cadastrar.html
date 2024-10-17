@@ -36,28 +36,27 @@
         </header>
 
         <main>
-            <form action="cadastro.jsp" name="formcadastro" method="post">
+            <form action="jsp/cadastro.jsp" name="formcadastro" method="post">
                 <table>
                     <tr>
                         <td>Nome:</td>
-                        <td><input type:"text" name:"nome" required></td>
+                        <td><input type:"text" name:"nome"></td>
                     </tr>
                     <tr>
                         <td>Idade:</td>
-                        <td><input type:"text" name:"idade" required></td>
+                        <td><input type:"text" name:"idade"></td>
                     </tr>
                     <tr>
                         <td>Email:</td>
-                        <td><input type:"email" name:"email" required></td>
+                        <td><input type:"email" name:"email"></td>
                     </tr>
                     <tr>
                         <td>Senha:</td>
-                        <td><input type:"password" name:"senha" required></td>
+                        <td><input type:"password" name:"senha"></td>
                     </tr>
                 </table>
-                <input type="hidden" name=oper> 
-                <input type="submit" value="Voltar" onclick="formcadastro.oper.value = 'voltar';">
-                <input type="submit" value="Cadastrar" onclick="formcadastro.oper.value = 'cadastrar';">
+                <input type="button" value="Voltar" onclick="window.location.assign('perfil.html')">
+                <input type="submit" value="Cadastrar">
             </form>
         </main>
 

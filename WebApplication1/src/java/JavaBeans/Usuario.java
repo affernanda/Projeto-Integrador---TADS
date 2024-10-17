@@ -7,14 +7,18 @@ public class Usuario extends Conexao {
 	public String nome;
 	public String idade;
 	public String email;
-	public String senha;
+	public String senhaUsuario;
+        
+        public Usuario() {
+        super(); 
+        }
 
 	public boolean checarLogin() {
 		try {
 			sql = "select * from usuarios where email = ? and senha = ?";
 			ps = con.prepareStatement(sql); // prepara SQL
 			ps.setString(1, email); // Configura Parametros
-			ps.setString(2, senha); // Configura Parametros
+			ps.setString(2, senhaUsuario); // Configura Parametros
 			tab = ps.executeQuery(); // Executa comando SQL
 			if (tab.next())
 				return true;
@@ -32,7 +36,7 @@ public class Usuario extends Conexao {
 			ps.setString(1, nome); // Configura Parametros
 			ps.setString(2, idade); // Configura Parametros
 			ps.setString(3, email);
-			ps.setString(4, senha); // Configura Parametros
+			ps.setString(4, senhaUsuario); // Configura Parametros
 			ps.executeUpdate(); // executa comando SQL
 			this.statusSQL = null; // armazena null se deu tudo certo
 		} catch (SQLException ex) {
@@ -47,7 +51,7 @@ public class Usuario extends Conexao {
 			ps.setString(1, nome); // Configura Parametros
 			ps.setString(2, idade); // Configura Parametros
 			ps.setString(3, email);
-			ps.setString(4, senha); // Configura Parametros
+			ps.setString(4, senhaUsuario); // Configura Parametros
 			ps.executeUpdate(); // executa comando SQL
 			this.statusSQL = null; // armazena null se deu tudo certo
 		} catch (SQLException ex) {

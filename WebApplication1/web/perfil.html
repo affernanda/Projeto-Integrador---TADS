@@ -36,20 +36,20 @@
 	</header>
 
 	<main>
-		<form action="login" name="formperfil" method="post">
+		<form action="jsp/login.jsp" name="formperfil" method="post">
 			<table>
 				<tr>
 					<td>Email:</td>
-					<td><input type:"email" name:"email" required></td>
+					<td><input type:"email" name:"email"></td>
 				</tr>
 				<tr>
 					<td>Senha:</td>
-					<td><input type:"password" name:"senha" required></td>
+					<td><input type:"password" name:"senha"></td>
 				</tr>
 			</table>
 			<input type="hidden" name= oper>
 			<input type="submit" value="Logar" onclick = "formperfil.oper.value = 'logar';">
-			<input type="submit" value="Cadastrar" onclick = "window.location.assign('cadastrar.html')">
+                        <input type="button" value="Cadastrar" onclick = "window.location.assign('cadastrar.html')">
 		</form>
 	</main>
 

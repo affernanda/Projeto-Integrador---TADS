@@ -5,3 +5,96 @@
 #C1121F
 #780000
 #FDF0D5
+
+
+body, h1, h2, p, ul {
+    margin: 1%;
+    padding: 1%;
+   }
+
+header {
+    background-color: #073A69;
+    background-size: 40%;
+    padding: 10px;
+}
+
+body h1 {
+    font-family: sans-serif;
+}
+
+main section:hover {
+    transform: scale(1.02);
+}
+
+section {
+    padding: 2%;
+    background-color: white;
+    margin: 10%;
+    max-width: 5%;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.1);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #073A69;
+    color: #f5f3ef;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+footer nav ul ol{
+    display: block;
+    color: #073A69;
+    list-style-type: none;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.termos{
+    background-color: #073A69;
+    color: #f5f3ef;
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça os itens */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    align-items: end;
+    font-size: small;
+}
+
+nav ul ol {
+    display: inline-block; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens */
+}
+
+nav ul ol {
+    display: inline-block; /* Exibe os itens em linha */
+    justify-content: space-between; /* Espaça os itens */
+}
+
+nav ul ol a {
+    color:#f5f3ef;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+nav ul ol a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+.container {
+    display:inline-flex; 
+    align-items: center; /* Centraliza os links no meio em relação a imagem */
+    justify-content: space-between;
+}
+
+.container h1 {
+    font-family: 'MinhaFonte', sans-serif;
+    color: #f5f3ef;
+}
+
+.destaque {
+    font-size: xx-large;
+    color: #f5f3ef;
+}
+

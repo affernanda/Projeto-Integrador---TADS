@@ -1,22 +1,22 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="JavaBeans.Usuario" %>
 <% 
-	String nome = request.getParameter("nome");
-	String idade = request.getParameter("idade");
-	String email = request.getParameter("email");
-	String senha = request.getParameter("senha");
-	String oper = request.getParameter("oper");
-	
-	Usuario usuario = new Usuario();
-	
-	if (oper.equals("cadastrar")){
-		usuario.nome = nome;
-		usuario.idade = idade;
-		usuario.email = email;
-		usuario.senha = senha;
-		usuario.incluir();
-		response.sendRedirect("index.html");
-	} else if (oper.equals("voltar")){
-		response.sendRedirect("perfil.html");
-	}
+    Usuario user = new Usuario();
+    if ( !(user.statusSQL == null) ) 
+        out.println(user.statusSQL);
+    
+    user.nome = request.getParameter("nome");
+    user.idade = request.getParameter("idade");
+    user.email = request.getParameter("email");
+    user.senha = request.getParameter("senha");
+    
+    user.incluir();
+    if ( !(user.statusSQL == null) ) 
+        out.println(user.statusSQL);
+    else
+    {
+      String sHTML="<center>Usuário criado com Sucesso!<br>"
+       + "<a href = '../index.html'> Voltar </a></center>";
+       out.println(sHTML);
+      }
 %>

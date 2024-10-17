@@ -97,35 +97,31 @@ nav ul ol a:hover {
 
 .carrossel {
     position: relative;
-    align-items: center;
     max-width: 50%;
     min-width: 50%;
-    height: 50%;
+    margin: auto;
     aspect-ratio: 16/9;
     overflow: hidden;
+    border-radius: 10px; /* Adiciona cantos arredondados, se desejado */
+    padding: 10px; /* Espaço interno */
+    box-sizing: border-box; /* Inclui a borda e o padding no tamanho total */
 }
 
 .carrossel-container {
-    display:100%;
-    max-width: 70%;
-    min-width: 50%;
+    display: flex;
     transition: transform 0.5s ease-in-out;
-    align-self: center;
-    align-items: center;
 }
 
-.carrossel-imagem{
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-between;
-    display:inline-flex; 
+.carrossel-imagem {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do carrossel */
+    display: flex; /* Para centralizar a imagem */
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
 }
 
 .carrossel img {
-    max-width: 70%;
-    min-width: 50%;
-    height: 50%;
-    display: block;
+    width: 100%; /* As imagens ocuparão 100% da largura da div pai */
+    object-fit: cover;
 }
 
 .carrossel-anterior, .carrossel-seguinte{

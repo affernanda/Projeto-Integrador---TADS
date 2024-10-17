@@ -1,6 +1,7 @@
 *{
 margin: 0%;
 padding: 0%;
+box-sizing: border-box;
 }
 
 body {
@@ -32,3 +33,29 @@ footer {
     display: flex;
     height: 100vh;
 }
+
+.coluna-esquerda {
+    width: 15%;
+    background-color: #073A69;
+    color: white;
+    padding: 20px;
+}
+
+.menu-vertical ol {
+    margin-bottom: 10px;
+}
+
+.menu-vertical a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-vertical a:hover {
+    color:#171725;
+}
+
+

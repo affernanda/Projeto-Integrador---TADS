@@ -27,9 +27,9 @@
     </header>
 
     <main>
-        <form name = frmAgenda method=post encType="multipart/form-data"> 
+        <form name="frmAgenda" method="post" enctype="multipart/form-data" onsubmit="validarFormulario(event)"> 
             <table id="agendamento">
-                <tr><td><strong>Escolha a data de sua aula:</strong> <input type = date name = "Opt1" placeholder = Data required> </td></tr>
+                <tr><td><strong>Escolha a data de sua aula:</strong> <input type = date name = "Opt1" placeholder = Data> </td></tr>
                 <tr><td><strong>Escolha o período da sua aula </strong></td></tr>
                 <tr><td><div class="opcao">
                     <input type="radio" id="opcao1" name="grupo" value="opcao1">
@@ -44,9 +44,8 @@
                     <label for="opcao3">Noite</label> 
                 </div>
                 </td></tr>
-                    <tr><td><strong>Informe um meio de comunicação para podemos te contatar:</strong></td><td><input type = tel name = Opt3 placeholder = "(00)000000000" required ></td></tr>
-                    <input type = "hidden" name = "oper" id = "oper">
-                    <tr><td><input type = "submit" class="button" value="Agendar" action = agendamento.js onclick = "document.getElementById('oper').value = 'enviado';"> </td></tr>
+                    <tr><td><strong>Informe um meio de comunicação para podemos te contatar:</strong></td><td><input type = tel name = Opt3 placeholder = "(00)000000000"></td></tr>
+                    <tr><td><input type="submit" class="button" value="Agendar"> </td></tr>
             </table>
         </form>  
     </main>

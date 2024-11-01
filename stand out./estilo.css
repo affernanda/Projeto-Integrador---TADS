@@ -81,6 +81,15 @@ nav ul ol a:hover {
     color: #f5f3ef;  
     width: 150px;
     height: 50px;
+    color: white;
+    border-radius: 5px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: black;
+    text-decoration:none;
+    font-size:medium;
 }
 
 /*---------------------------------*/
@@ -130,7 +139,6 @@ nav ul ol a:hover {
 .textopadrao {
     font-size: medium;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between; 
 }
@@ -139,7 +147,7 @@ nav ul ol a:hover {
 
 
 
-/*PARTE 1 INDEX: COMPARRTILHE*/
+/*PARTE 1 INDEX: COMPARTILHE*/
 
 .segmento1 { 
     display: flex;
@@ -205,7 +213,10 @@ footer {
 }
 
 footer nav ul ol{
-    display: block;
+    display:flex;
+}
+
+footer nav ul ol a{
     color: #454545;
     list-style-type: none;
 }
